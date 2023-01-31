@@ -1,12 +1,23 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
+import Tabs from './src/components/Tabs';
+import MoviesList from './src/tabs/movies/MoviesList';
+import DropMenu from './src/tabs/movies/DropMenu';
+// import SearchResults from './src/tabs/SearchResults';
+
+
 
 export default function App() {
+
+  console.log('yahh')
   return (
     <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
+      <Tabs/>
+      <DropMenu/>
+      <Text>Yahhoo</Text>
       <StatusBar style="auto" />
     </View>
+
   );
 }
 
